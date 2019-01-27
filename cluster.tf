@@ -2,7 +2,7 @@ resource "google_container_cluster" "gke-cluster" {
   name               = "gke-cluster-1"
   network            = "claranet-test"
   zone               = "europe-west1-b"
-  initial_node_count = 1
+  initial_node_count = 3
   node_config {
         oauth_scopes = [
           "https://www.googleapis.com/auth/compute",
